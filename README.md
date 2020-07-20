@@ -39,24 +39,34 @@ RESTful 인터페이스를 사용하여 스키마(Schema)를 관리하거나 조
 ```
 * Schema Registry UI
 ```
-schema-registry-ui는 스키마 레지스트리의 RESTful 기능을 UI 로 제공해주는 서비스입니다. Schema 조회, 생성, 수정, 삭제를 UI 로 제공합니다.
+schema-registry-ui는 스키마 레지스트리의 RESTful 
+기능을 UI 로 제공해주는 서비스입니다. 
+Schema 조회, 생성, 수정, 삭제를 UI 로 제공합니다.
 ```
 * Kafka Rest Proxy
 ```
-Kafka 클러스터에 RESTful 인터페이스를 제공합니다. API를 사용하여 메시지를 생성해서 이용할 수 있습니다.
+Kafka 클러스터에 RESTful 인터페이스를 제공합니다. 
+API를 사용하여 메시지를 생성해서 이용할 수 있습니다.
 ```
 * Kafka Topics UI
 ```
-Kafka Topic을 조회하고 Kafka Cluster 의 상태를 보여주는 UI 서비스로 Kafka Rest Proxy 를 위한 서비스입니다.
+Kafka Topic을 조회하고 Kafka Cluster 의 상태를 
+보여주는 UI 서비스로 Kafka Rest Proxy 를 위한 서비스입니다.
 ```
 * Ksqldb Server
 ```
-KSQL은 Kafka 클러스터와 연동 되며 Topic 에 대해 query 문을 작성해주는 서비스로 Schema Registry UI 와 연동 된다.
+KSQL은 Kafka 클러스터와 연동 되며 Topic 에 대해 
+query 문을 작성해주는 서비스로 Schema Registry UI 와 연동 된다.
 ```
 
 ### 실행 및 확인
+
 * 메시지 publish
-> localhost:9991/send/music/dance-monkey
-> localhost:9991/send/news/covid19
+
+> ```localhost:9991/send/music/dance-monkey```
+
+> ```localhost:9991/send/news/covid19```
+
 * topic 확인
-> localhost:8000
+
+> ```localhost:8000```
